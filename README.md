@@ -10,4 +10,4 @@
     config commit -m "A short message" 
     config push
 
-[https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/](Original post)
+[Original post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
