@@ -9,3 +9,5 @@
     config add /path/to/file 
     config commit -m "A short message" 
     config push
+
+[https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/](Original post)
