@@ -124,6 +124,7 @@ bindsym $mod+n exec st -e nvim
 bindsym $mod+Shift+u scratchpad show
 bindsym $mod+q [instance="dropdown"] scratchpad show, [instance="dropdown"] move position center
 bindsym $mod+u move scratchpad
+bindsym Control+space focus output eDP1; exec --no-startup-id $HOME/scripts/i3.sh
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
