@@ -135,7 +135,6 @@ setopt correct
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export XDG_CURRENT_DESKTO=KDE
-alias config1='/usr/bin/git --git-dir=$HOME/test-bare/ --work-tree=$HOME'
 alias config='/usr/bin/git --git-dir=$HOME/DotArchMac/ --work-tree=$HOME'
 alias orphans="pacman -Qdt" # List orphan programs
 alias pu="sudo pacman -Syu"
@@ -169,6 +168,11 @@ alias vv='vim ~/ArchMac/.vimrc'
 alias serve='python -m http.server' # optional arg: port (defaults to 8000)
 alias e=exit
 #alias maj = "git_update"
+
+cfg_update() { 
+          config commit -a -m "$1"
+          config push
+        }
 
 git_update() {
       git add -A
