@@ -160,6 +160,7 @@ alias vi3='vim ~/.config/i3/config'
 alias vv='vim ~/ArchMac/.vimrc'
 alias serve='python -m http.server' # optional arg: port (defaults to 8000)
 alias e=exit
+alias android="./android-file-transfer-linux/build/qt/android-file-transfer"
 #alias maj = "git_update"
 
 cfg_update() { 
