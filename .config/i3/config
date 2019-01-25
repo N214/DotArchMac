@@ -274,6 +274,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 
 bindsym $mod+o exec rofi -dpi 180 -show run
+bindsym $mod+g exec exec st -e env XDG_CURRENT_DESKTOP=GNOME gnome-control-center 
 bindsym $mod+c exec chromium
 bindsym $mod+p exec spotify --force-device-scale-factor=2
 bindsym $mod+t exec thunar 
@@ -293,7 +294,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Runs the tmuxinit script, which searches for an earlier tmux instance,
 # otherwise starts a new one (to prevent multiple dropdown sessions).
-exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
+exec --no-startup-id /usr/lib/polkit-1/polkit-agent-helper-1
 exec --no-startup-id volumeicon
 exec --no-startup-id compton -b
 exec --no-startup-id pamac-tray  # pamac package manager tray

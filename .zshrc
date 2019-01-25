@@ -136,7 +136,7 @@ setopt correct
 export XDG_CURRENT_DESKTO=KDE
 alias config='/usr/bin/git --git-dir=$HOME/DotArchMac/ --work-tree=$HOME'
 alias orphans="pacman -Qdt" # List orphan programs
-alias pu="sudo pacman -Syu"
+alias pu="sudo pacman -Syyuu"
 alias p="sudo pacman"
 alias tmux="tmux -2"
 alias SS="sudo systemctl"
