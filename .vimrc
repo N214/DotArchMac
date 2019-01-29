@@ -641,6 +641,9 @@ nnoremap <leader><Space> zm
 
 
 if has ('nvim') 
+  let g:vimtex_compiler_progname = 'nvr'
+  let g:python3_host_prog="/opt/miniconda3/bin/python3"
+  let g:python_host_prog="/usr/bin/python2"
   tnoremap <expr> <A-r> '<C-\><C-N>"'.nr2char(getchar()).'pi'
   tnoremap <Esc> <C-\><C-n>
   tnoremap <M-[> <Esc>
