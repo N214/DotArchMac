@@ -164,6 +164,10 @@ alias serve='python -m http.server' # optional arg: port (defaults to 8000)
 alias e=exit
 alias android="./android-file-transfer-linux/build/qt/android-file-transfer"
 #alias maj = "git_update"
+#
+# terminal rickroll!
+alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+
 
 cfg_update() { 
           config commit -a -m "$1"

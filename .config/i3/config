@@ -203,6 +203,8 @@ exec_always feh --randomize --bg-scale ~/Pictures/*
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 5% # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 5% # decrease screen brightness
+
+# Keyboard backlight
 bindsym XF86KbdBrightnessUp exec kbdlight up 10%
 bindsym XF86KbdBrightnessDown exec kbdlight down 10%
 # Volume controls
