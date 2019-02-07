@@ -436,6 +436,7 @@ command! -bang -nargs=* Rg
 
 command! -bang -nargs=* Find call fzf#vim#grep( 'rg  --line-number --no-heading --ignore-case --no-ignore   --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, fzf#vim#with_preview('right'),<bang>0)
 
+command! -bang -nargs=* S call fzf#vim#grep('rg --line-number --no-heading --ignore-case --no-ignore   --color "always" '.shellescape(<q-args>). ' ~/Dropbox/MA1' , 1,fzf#vim#with_preview('right'), <bang>0)
 command! -bang -nargs=* Finddd call fzf#vim#grep('rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --glob "!.git/*" --color "always" '.shellescape(<q-args>).'| tr -d "\017"', 1, fzf#vim#with_preview('right'),<bang>0)
 
 command! -bang -nargs=? -complete=dir HFiles
@@ -446,9 +447,9 @@ jlet path = finddir(".git", expand("%:p:h").";")
 	return fnamemodify(substitute(path, ".git", "", ""), ":p:h")
 endfun
 
-nnoremap <silent> <Leader>c :HFiles ~/Dropbox/MA1/Q1<CR>
+nnoremap <silent> <Leader>c :HFiles ~/Dropbox/MA1<CR>
 nnoremap <silent> <Leader>fr :Find <CR>
-nnoremap <silent> <Leader>fd :Find<CR>
+nnoremap <silent> <Leader>fd :S<CR>
 nnoremap <silent> <Leader>fc :Colors<CR>
 nnoremap <silent> <Leader>ff :Files <CR>
 nnoremap <silent> <Leader>fh :History<CR>

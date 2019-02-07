@@ -162,7 +162,9 @@ alias vv='vim ~/ArchMac/.vimrc'
 alias ls="ls -l"
 alias serve='python -m http.server' # optional arg: port (defaults to 8000)
 alias e=exit
+alias py=python
 alias android="./android-file-transfer-linux/build/qt/android-file-transfer"
+alias code= "code --force-device-scale-factor=2"
 #alias maj = "git_update"
 #
 # terminal rickroll!

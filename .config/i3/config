@@ -300,7 +300,7 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id volumeicon
 exec --no-startup-id compton -b
-exec --no-startup-id pamac-tray  # pamac package manager tray
+# exec --no-startup-id pamac-tray  # pamac package manager tray
 exec --no-startup-id nm-applet  
 exec --no-startup-id mailspring -b --force-device-scale-factor=2
 exec --no-startup-id clipit  # xfce4 clipboard manager
@@ -308,4 +308,5 @@ exec --no-startup-id "fcitx"
 exec --no-startup-id dbus-launch dropbox start
 exec --no-startup-id unclutter
 exec --no-startup-id mpd
+exec --no-startup-id xss-lock dm-tool lock
 exec --no-startup-id xautolock -time 10 -locker lock
