@@ -15,6 +15,8 @@
     config commit -m "A short message" 
     config push
 
+    cfg_update "LazyCommit"
+
 ## Usage example host 2
     curl -Lks https://raw.githubusercontent.com/N214/DotArchMac/master/scripts/cfg-install | /bin/bash
 [Original post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
