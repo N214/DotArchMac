@@ -141,6 +141,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 
 for_window [class="Terminal"] move to workspace $workspace1
 for_window [class="Chromium"] move to workspace $workspace2
+for_window [class="Firefox"] move to workspace $workspace2
 for_window [class="mupdf"] move to workspace $workspace3
 for_window [class="okular"] move to workspace $workspace3
 for_window [class="Mailspring"]  move to workspace $workspace3; workspace $workspace3
@@ -278,6 +279,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 bindsym $mod+o exec rofi -dpi 180 -show run
 bindsym $mod+g exec st -e env XDG_CURRENT_DESKTOP=GNOME gnome-control-center 
 bindsym $mod+c exec chromium
+bindsym $mod+i exec firefox
 bindsym $mod+p exec spotify --force-device-scale-factor=2
 bindsym $mod+t exec thunar 
 bindsym $mod+Shift+m exec texpender.sh

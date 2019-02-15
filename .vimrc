@@ -81,7 +81,6 @@ set splitbelow splitright                                              " New spl
 set foldmethod=manual
 set nofoldenable
 set wildmode=longest,list,full
-let g:session_autosave = 'no'
 
 "" Past command
 nnoremap P o<ESC>p
@@ -144,8 +143,7 @@ noremap <leader>l :Align
 nnoremap <leader>a :Ack<space>
 nnoremap <leader>s :CtrlSF<space>
 nnoremap <leader>r :Rg<space>
-nnoremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>f :NERDTreeFind<CR>
+nnoremap <leader>d :NERDTreeFind<CR>
 nnoremap <leader>] :TagbarToggle<CR>
 " Unknown function nnoremap <leader><space> :call whitespace#strip_trailing()<CR>
 nnoremap <leader>g :GitGutterToggle<CR>
@@ -153,12 +151,12 @@ noremap <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo '
 noremap <silent> <leader>v :e ~/.vimrc<CR>
 noremap <silent> <leader>vb :e ~/.vimrc.bundles<CR>
 noremap <silent> <leader>E :setlocal spell spelllang=en_us<CR>
-inoremap <leader><leader> <Esc>/<++><Enter>"_c4l
+"noremap <leader><leader> <Esc>/<++><Enter>"_c4l
 
-inoremap < <><space><++><ESC>5hi
+"inoremap < <><space><++><ESC>5hi
 "inoremap ( ()<space><++><ESC>5hi
-inoremap [ []<space><++><ESC>5hi
-inoremap { {}<space><++><ESC>5hi
+"inoremap [ []<space><++><ESC>5hi
+"inoremap { {}<space><++><ESC>5hi
 inoremap º \
 nnoremap <C-t> :tabnew<cr>
 nnoremap <Leader>dd :call delete(expand('%'))\| bdelete! \| :exe ":echo 'file deleted'"<CR>
@@ -248,7 +246,22 @@ let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
+
+
+"""""""""""""""""""""
+" Xolox vim plugins "
+"""""""""""""""""""""
 let g:notes_directories = ['~/Notes']
+let g:session_autosave = 'no'
+" vim-easytags
+" Where to look for tags files
+set tags=./tags;,~/.vimtags
+" Sensible defaults
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+let g:easytags_suppress_ctags_warning = 1
 
 """"""""""""""""""""""""""""
 "  Use The Silver Searcher "
