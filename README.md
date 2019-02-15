@@ -2,6 +2,11 @@
 ## Configuration
     git init --bare
     alias config='/usr/bin/git --git-dir=$HOME/DotArchMac/ --work-tree=$HOME' (add this alias to .zshrc or .bashrc)
+
+    cfg_update() { 
+              config commit -a -m "$1"
+              config push
+            }
     zsh
     config config --local status.showUntrackedFiles no
 
