@@ -5,9 +5,11 @@
     zsh
     config config --local status.showUntrackedFiles no
 
-## Usage example
+## Usage example host 1
     config add /path/to/file 
     config commit -m "A short message" 
     config push
 
+## Usage example host 2
+    curl -Lks https://raw.githubusercontent.com/N214/DotArchMac/master/scripts/cfg-install | /bin/bash
 [Original post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
