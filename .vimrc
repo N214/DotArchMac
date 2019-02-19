@@ -81,6 +81,8 @@ set splitbelow splitright                                              " New spl
 set foldmethod=manual
 set nofoldenable
 set wildmode=longest,list,full
+set undofile                                                "Maintain undo history between sessions
+set undodir=~/.vim/undodir
 
 "" Past command
 nnoremap P o<ESC>p

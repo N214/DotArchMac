@@ -169,6 +169,7 @@ alias code= "code --force-device-scale-factor=2"
 #
 # terminal rickroll!
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
+alias vf=vifm
 
 
 cfg_update() { 
