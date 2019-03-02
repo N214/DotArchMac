@@ -67,6 +67,7 @@ fixamo_quiet
 " Ignore website 
 blacklistadd www.facebook.com
 blacklistadd http://localhost:8888/notebooks/
+blacklistadd http://localhost:8888/lab/
 
 " Make quickmarks for the sane Tridactyl issue view
 quickmark t https://github.com/cmcaine/tridactyl/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+

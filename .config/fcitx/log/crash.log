@@ -1,13 +1,18 @@
 =========================
-FCITX 4.2.9.5 -- Get Signal No.: 11
-Date: try "date -d @1548383569" if you are using GNU date ***
-ProcessID: 27263
-fcitx(+0x145e)[0x55e434ef445e]
-/usr/lib/libc.so.6(+0x37e00)[0x7fe482013e00]
-/usr/lib/fcitx/fcitx-dbus.so(+0x1e23)[0x7fe481ad1e23]
-/usr/lib/fcitx/fcitx-dbus.so(+0x1fc5)[0x7fe481ad1fc5]
-/usr/lib/libfcitx-core.so.0(+0x951c)[0x7fe4825f751c]
-/usr/lib/libfcitx-core.so.0(FcitxInstanceRun+0x330)[0x7fe4825f7fb0]
-fcitx(+0xd8b)[0x55e434ef3d8b]
-/usr/lib/libc.so.6(__libc_start_main+0xf3)[0x7fe482000223]
-fcitx(+0xe0a)[0x55e434ef3e0a]
+FCITX 4.2.9.5 -- Get Signal No.: 6
+Date: try "date -d @1551557012" if you are using GNU date ***
+ProcessID: 1857
+fcitx(+0x145e)[0x5600c33aa45e]
+/usr/lib/libc.so.6(+0x37e00)[0x7f2177a05e00]
+/usr/lib/libc.so.6(gsignal+0x10f)[0x7f2177a05d7f]
+/usr/lib/libc.so.6(abort+0x125)[0x7f21779f0672]
+/usr/lib/libdbus-1.so.3(+0xe03f)[0x7f217747d03f]
+/usr/lib/libdbus-1.so.3(+0x308d3)[0x7f217749f8d3]
+/usr/lib/libdbus-1.so.3(dbus_watch_get_enabled+0x34)[0x7f217749e434]
+/usr/lib/fcitx/fcitx-dbus.so(+0x1dea)[0x7f21774c3dea]
+/usr/lib/fcitx/fcitx-dbus.so(+0x1fc5)[0x7f21774c3fc5]
+/usr/lib/libfcitx-core.so.0(+0x951c)[0x7f2177fe951c]
+/usr/lib/libfcitx-core.so.0(FcitxInstanceRun+0x330)[0x7f2177fe9fb0]
+fcitx(+0xd8b)[0x5600c33a9d8b]
+/usr/lib/libc.so.6(__libc_start_main+0xf3)[0x7f21779f2223]
+fcitx(+0xe0a)[0x5600c33a9e0a]

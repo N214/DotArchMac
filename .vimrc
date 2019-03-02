@@ -89,6 +89,11 @@ nnoremap P o<ESC>p
 nnoremap <leader>p O<ESC>p
 nnoremap <CR> :nohlsearch<CR>
 
+" Compile document, be it groff/LaTeX/markdown/etc.
+map <leader>C :silent exec "w! \| !compiler <c-r>%"<CR>
+
+" Open corresponding .pdf/.html or preview
+map <leader>P :!opout <c-r>%<CR><CR>
 
 """""""""""""
 " ultisnips "
@@ -350,6 +355,7 @@ Plug 'moll/vim-bbye'  "buffer close
 Plug 'thinca/vim-quickrun'  "run buffer's code
 Plug 'Townk/vim-autoclose'  "Close bracket
 Plug 'zchee/deoplete-jedi'
+Plug 'vim-scripts/mru.vim'   "Loast opened file
 
 """"""""""""""""
 "   deoplete   "
