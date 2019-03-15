@@ -160,13 +160,14 @@ alias torrent='torrench'
 alias mantorrent='vim /home/n214/.config/torrench/torrent'
 alias vi3='vim ~/.config/i3/config'
 alias vv='vim ~/ArchMac/.vimrc'
-alias ls="ls -l"
+alias ls="exa -l"
 alias serve='python -m http.server' # optional arg: port (defaults to 8000)
 alias e=exit
 alias py=python
 alias android="./android-file-transfer-linux/build/qt/android-file-transfer"
 alias code= "code --force-device-scale-factor=2"
 alias journal="sudo journalctl -p 3 -xb"
+alias cc='/home/n214/scripts/copy.sh'
 #alias maj = "git_update"
 #
 # terminal rickroll!
@@ -254,7 +255,7 @@ ccf() {
   fi
 }
 
-fv() {du -a ~/Dropbox/* | fzf | xargs -r nvim;}
+fv() {du -a ~/Dropbox/* | awk '{print $2}' | fzf | xargs -r nvim;}
 fC() {du -a ~/Downloads ~/.config/* | awk '{print $2}' | fzf | xargs -r nvim;}
 C() {cp -v "$1" "$(du -a ~/Dropbox/* | awk '{print $2}' | fzf | sed "s|~|$HOME|")" ;}
 R() {rm -rfv "$(du -a ~/Dropbox/* ~/Downloads | awk '{print $2}' | fzf | sed "s|~|$HOME|")" ;}
