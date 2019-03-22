@@ -84,6 +84,12 @@ set wildmode=longest,list,full
 set undofile                                                "Maintain undo history between sessions
 set undodir=~/.vim/undodir
 
+"" Git shortcut
+map <F1> :! git status
+map <F2> :! git diff %
+map <F3> :! git add %
+map <F4> :! git commit -m "Lazy Commit" %
+map <F5> :! git log - oneline - abbrev-commit
 "" Past command
 nnoremap P o<ESC>p
 nnoremap <leader>p O<ESC>p
@@ -93,7 +99,6 @@ nnoremap <CR> :nohlsearch<CR>
 map <leader>C :silent exec "w! \| !compiler <c-r>%"<CR>
 
 " Open corresponding .pdf/.html or preview
-map <leader>P :!opout <c-r>%<CR><CR>
 
 """""""""""""
 " ultisnips "

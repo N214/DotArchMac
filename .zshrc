@@ -259,3 +259,5 @@ fv() {du -a ~/Dropbox/* | awk '{print $2}' | fzf | xargs -r nvim;}
 fC() {du -a ~/Downloads ~/.config/* | awk '{print $2}' | fzf | xargs -r nvim;}
 C() {cp -v "$1" "$(du -a ~/Dropbox/* | awk '{print $2}' | fzf | sed "s|~|$HOME|")" ;}
 R() {rm -rfv "$(du -a ~/Dropbox/* ~/Downloads | awk '{print $2}' | fzf | sed "s|~|$HOME|")" ;}
+
+# bindkey -v
