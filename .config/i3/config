@@ -152,7 +152,7 @@ for_window [class="Spotify"] move to workspace $workspace5; workspace $workspace
 
 
 # reload the configuration file
-bindsym $mod+Shift+c rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+# bindsym $mod+Shift+c rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
@@ -309,7 +309,7 @@ exec --no-startup-id clipit  # xfce4 clipboard manager
 exec --no-startup-id "fcitx"
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id dbus-launch dropbox start
-exec --no-startup-id exec st -e greenclip daemon
+# exec --no-startup-id exec st -e greenclip daemon
 exec --no-startup-id unclutter
 exec --no-startup-id mpd
 exec --no-startup-id xss-lock dm-tool lock

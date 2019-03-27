@@ -116,7 +116,7 @@ let g:UltiSnipsSnippetDirectories = ['/home/n214/.vim/bundle/ultiSnips', 'ultiSn
 autocmd Filetype tex setl updatetime=5
 let g:livepreview_previewer = 'mupdf'
 let g:vimtex_view_method = 'mupdf'
-"let g:livepreview_engine = 'xelatex'
+let g:livepreview_engine = 'xelatex'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  Enable basic mouse behavior such as resizing buffers  "
