@@ -1,6 +1,11 @@
 #!/bin/bash
 
 git clone --bare https://github.com/N214/DotArchMac.git $HOME/.cfg
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
 }
