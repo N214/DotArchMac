@@ -20,3 +20,15 @@
 ## Usage example host 2
     curl -Lks https://raw.githubusercontent.com/N214/DotArchMac/master/scripts/cfg-install.sh | /bin/bash
 [Original post](https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/)
+
+## Install dependencies
+### Vundle
+` git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+
+### Vim-plug
+```
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+### Tmux tpm
+`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
