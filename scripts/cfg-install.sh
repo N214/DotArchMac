@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 git clone --bare https://github.com/N214/DotArchMac.git $HOME/.cfg
 
