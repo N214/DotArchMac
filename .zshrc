@@ -86,6 +86,8 @@ alias nv=nvim
 alias lsf="find . -maxdepth 3 -not -type d | fzf --preview 'bat --style=numbers --color=always --line-range :500 {} | head -200'"
 alias fzfbat="fzf --preview 'less -N {} | head -200'"
 alias tf=terraform
+alias n=nnn -d
+alias r=ranger
 alias d=docker
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
