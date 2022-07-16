@@ -1,0 +1,13 @@
+Applications/
+go/
+Library/
+
+
+!Pictures/
+!Desktop/
+!BD/
+!Downloads/
+!Golang/
+!Python/
+!Documents/
+!__pycahe__/
