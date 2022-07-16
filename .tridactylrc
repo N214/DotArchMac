@@ -1,0 +1,77 @@
+"
+" Binds
+"
+
+unbind d
+unbind H
+unbind J
+unbind K
+unbind L
+
+bind x tabclose
+bind <C-h> back
+bind <C-l> forward
+bind <C-j> tabprev
+bind <C-k> tabnext
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+bind ,G tabopen www.google.com
+bind ,F tabopen www.facebook.com
+bind ,Y tabopen www.youtube.com
+bind ,UV tabopen https://uv.ulb.ac.be/login/index.php
+bind ,B tabopen www.basketusa.com
+
+bind ,g open www.google.com
+bind ,f open www.facebook.com
+bind ,y open www.youtube.com
+bind ,uv open https://uv.ulb.ac.be/login/index.php
+bind ,b open www.basketusa.com
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+" Comment toggler for Reddit and Hacker News
+bind ;c hint -c [class*="expand"],[class="togg"]
+
+
+" Git{Hub,Lab} git clone via SSH yank
+bind yg composite js "git clone " + document.location.href.replace(/https?:\/\//,"git@").replace("/",":").replace(/$/,".git") | clipboard yank
+
+" I like wikiwand but I don't like the way it changes URLs
+bindurl wikiwand.com yy composite js document.location.href.replace("wikiwand.com/en","wikipedia.org/wiki") | clipboard yank
+
+" Make gu take you back to subreddit from comments
+bindurl reddit.com gu urlparent 4
+
+" Allow Ctrl-a to select all in the commandline
+unbind --mode=ex <C-a>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+colors dark
+"
+" Misc settings
+"
+
+" set editorcmd to suckless terminal, or use the defaults on other platforms
+js tri.browserBg.runtime.getPlatformInfo().then(os=>{const editorcmd = os.os=="linux" ? "st vim" : "auto"; tri.config.set("editorcmd", editorcmd)})
+
+
+" Sane hinting mode
+set hintfiltermode vimperator-reflow
+set hintnames numeric
+
+" Make Tridactyl work on more sites at the expense of some security
+set csp clobber
+fixamo_quiet
+
+" Ignore website 
+blacklistadd www.facebook.com
+blacklistadd http://localhost:8888/notebooks/
+blacklistadd http://localhost:8888/lab/
+
+" Make quickmarks for the sane Tridactyl issue view
+quickmark t https://github.com/cmcaine/tridactyl/issues?utf8=%E2%9C%93&q=sort%3Aupdated-desc+
+
+"
+" URL redirects
+" 
