@@ -1,7 +1,7 @@
 Applications/
 go/
 Library/
-
+__pycahe__/
 
 !Pictures/
 !Desktop/
@@ -10,4 +10,3 @@ Library/
 !Golang/
 !Python/
 !Documents/
-!__pycahe__/
